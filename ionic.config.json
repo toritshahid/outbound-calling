@@ -1,0 +1,7 @@
+{
+  "name": "outbound-calling",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
