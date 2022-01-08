@@ -78,7 +78,6 @@ body {
 	font-size: 20px;
 	color: white;
 }
-
 .rectangle {
   position: absolute;
   width: 100vw;
@@ -163,7 +162,63 @@ body {
     border-radius: 10vw;
   }
 }
+.radio-btn-container {
+  display: flex;
+  justify-content: center;
+  color:  #5DB075;
+  margin-top: 33vh;
+  font-size: 2vmin;
+  font-weight: 800;
+  width: 100vw;
+  &__logos {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #f8fcf3;
+    border: .5vmin solid #5DB075;
+    box-sizing: border-box;
+    height: 5vmax;
+    width: 15vmax;
+    margin: 1vmax;
+    border-radius: 2vw;
+  }
 
+}
+/* pretty radio */
+label > input[type="radio"] {
+  display: none;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  width: 1vmax;
+  height: 1vmax;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1vmax;
+  border-color: gray;
+}
+label > input[type="radio"]:checked + * {
+  color: teal;
+}
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(teal 0%, teal 40%, transparent 50%, transparent);
+  border-color: teal;
+}
+
+/* basic layout */
+fieldset {
+  margin-top: 2vmin;
+  max-width: 40vmin;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+label > input[type="radio"] + * {
+  display: inline-block;
+  padding: 0.5vmax 1vmax;
+}
 .form-container {
 
   width: 100vw;
@@ -203,5 +258,3 @@ body {
 
 
 }
-
-
