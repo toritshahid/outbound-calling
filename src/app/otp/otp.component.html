@@ -11,17 +11,23 @@
       <div >
         <p class="headings__heading-main">STEP-UP</p>
         <p class="headings__heading-sub">Instant loan for the Mobile first world</p>
+        <p class="headings__otp-heading">Enter the OTP</p>
       </div>
     </div>
     <div class="section-two justify-content-center">
       <form>
-        <div class="section-two__inp-one">
-        <input class="section-two__inp-one__input-one" placeholder="Enter Your Number">
+      <div class="section-two__digit-group" >
+        <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+        <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+        <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+        <input type="text" id="digit-4" name="digit-4"  data-previous="digit-3" />
       </div>
       </form>
+
       <div class="btn-div">
-        <button class="btn-one" routerLink="./otp">Continue</button>
+        <button class="btn-one" routerLink="/register">Continue</button>
       </div>
     </div>
   </div>
-</div>
+  </div>
+

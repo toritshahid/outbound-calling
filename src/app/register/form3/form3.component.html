@@ -15,7 +15,7 @@
       <p class="rectangle__tracking-btns__line-connector"></p>
       <div class="rectangle__tracking-btns__ring">
         <p class="rectangle__tracking-btns__ring__round-btns-first">
-         3</p>
+          3</p>
       </div>
       <p class="rectangle__tracking-btns__line-connector"></p>
       <p class="rectangle__tracking-btns__round-btns">4</p>
@@ -25,20 +25,46 @@
   <div class="img-container">
   </div>
   <hr>
-    <form class="form-container">
+  <form class="form-container">
 
 
 
-        <input class="input-main" type="text" placeholder="Aadhar cARd">
+    <input class="input-main" type="text" placeholder="Aadhar Card">
 
-        <input class="input-main" type="text" placeholder="Pan Card">
+    <div class="input-dev">
+      <div class="input-sub-file">
+        <p>Upload From Front Side</p>
+        <input type="file" id="BtnBrowseHidden" name="files" style="display: none;" />
+        <label for="BtnBrowseHidden" id="LblBrowse">
+          <i class="fa fa-cloud-upload" style="font-size:48px;color:green"></i>
+        </label>
+      </div>
+      <div class="input-sub-file">
+        <p>Upload From Back Side</p>
+        <input type="file" id="BtnBrowseHidden" name="files" style="display: none;" />
+        <br>
+        <label for="BtnBrowseHidden" id="LblBrowse">
+          <i class="fa fa-cloud-upload" style="font-size:48px;color:green"></i>
+        </label>
 
-
-
-
-    </form>
-    <div class="btn-div">
-      <button class="btn-one" routerLink="/form2">Continue</button>
+      </div>
     </div>
-  </div>
+    <input class="input-main" type="text" placeholder="Pan Card">
+    <div class="input-dev">
+      <div class="input-sub-file">
+        <p>Upload From Front Side</p>
+        <input type="file" id="BtnBrowseHidden" name="files" style="display: none;" /><br>
+        <label for="BtnBrowseHidden" id="LblBrowse">
+          <i class="fa fa-cloud-upload" style="font-size:48px;color:green"></i>
+        </label>
+      </div>
+    </div>
 
+
+
+
+  </form>
+  <div class="btn-div">
+    <button class="btn-one" routerLink="/form4">Continue</button>
+  </div>
+</div>

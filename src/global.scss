@@ -46,6 +46,103 @@ body {
     background-color: white;
 
 }
+.section-one{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  order: 0;
+
+  &__img-logo{
+    align-self: center;
+    height: 12vh;
+    width: 30%;
+    margin-left: 50vw;
+    border-radius: 10px;
+  }
+  &__img-one{
+    margin-top: 5px;
+    height: 38vh;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.headings{
+  display:flex;
+  order: 1;
+  justify-content: center;
+  height: 25vh;
+  width: 100vw;
+  font-family: 'Roboto';
+  &__heading-main{
+    font-size: 5vmax;
+    font-weight: 800;
+    color: rgb(7, 145, 7);
+  }
+  &__heading-sub{
+    font-size: 2vmax;
+    font-weight: 0;
+    color: grey;
+  }
+  &__otp-heading{
+    align-self: center;
+    font-size: 2vmax;
+    font-weight: 500;
+    color: black;
+  }
+}
+
+.section-two{
+  height: 23vh;
+  width: 100%;
+  order: 2;
+  justify-content: center;
+  &__inp-one{
+    display: flex;
+    justify-content: center;
+    &__input-one{
+      width: 80vw;
+      height: 7vh;
+      display: inline-block;
+      border: 1px solid gray;
+      border-radius: 1rem;
+      text-align: center;
+      margin: 2vh;
+      align-self: center;
+      color: white;
+    }
+  }
+  &__digit-group {
+    width: 80vw;
+    height: 7vh;
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+    input {
+      width: 5vh;
+      height: 7vh;
+      border: 1px solid rgb(7, 145, 7);
+      text-align: center;
+      font-size: 24px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      color: white;
+      margin: 0 2px;
+      background-color: white;
+    }
+
+    .splitter {
+      padding: 0 5px;
+      color: white;
+      font-size: 24px;
+    }
+  }
+}
+
+
+
+
 .container-main{
   height: 100vh;
   width: 100vw;
@@ -245,6 +342,7 @@ label > input[type="radio"] + * {
 
   }
   .input-sub{
+
     background: #f6f6f6;
     margin-bottom: 5vh;
     margin: 1vw;
@@ -253,6 +351,18 @@ label > input[type="radio"] + * {
     box-sizing: border-box;
     border-radius: 8px;
     height: 5vh;
+    color: black;
+  }
+  .input-sub-file{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin: 1vw;
+    width: 50vw;
+    border: 2px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 15vh;
     color: black;
   }
 
