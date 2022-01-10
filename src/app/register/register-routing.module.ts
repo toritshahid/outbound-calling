@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { FinalpageComponent } from './finalpage/finalpage.component';
 import { Form1Component } from './form1/form1.component';
 import { Form2Component } from './form2/form2.component';
 import { Form3Component } from './form3/form3.component';
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'form4',
     component: Form4Component
+  },
+  {
+    path:'final',
+    component: FinalpageComponent
   }
 ];
 

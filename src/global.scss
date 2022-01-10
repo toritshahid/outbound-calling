@@ -168,6 +168,20 @@ body {
     background-color: rgb(5, 83, 5);
   }
 }
+.btn-one-final{
+  width: 40vw;
+  height: 7vh;
+  margin: 2vh;
+  display: inline-block;
+  background-color: rgb(7, 145, 7);
+  color: white;
+  text-align: center;
+  border: 1px solid darkslategrey;
+  border-radius: 1rem ;
+  &:hover{
+    background-color: rgb(5, 83, 5);
+  }
+}
 
 
 .prompt {
