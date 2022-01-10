@@ -368,8 +368,7 @@ label > input[type="radio"] + * {
     color: black;
   }
   .input-sub-file{
-    display: flex;
-    justify-content: center;
+
     margin-bottom: 5vh;
     margin: 1vw;
     width: 50vw;
@@ -378,6 +377,17 @@ label > input[type="radio"] + * {
     border-radius: 8px;
     height: 15vh;
     color: black;
+  }
+  .aadar-head{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    font-weight: 100;
+  }
+  .file-input{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
   }
 
 
