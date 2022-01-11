@@ -38,6 +38,7 @@ p{
 html {
     // This defines what 1rem is
     font-size: 100%;
+    background-color: #f0f7e9;
 
 }
 
@@ -363,7 +364,7 @@ label > input[type="radio"] + * {
     width: 80vw;
     margin-left: 8vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-right: 8vw;
 
   }
@@ -372,7 +373,7 @@ label > input[type="radio"] + * {
     background: #f6f6f6;
     margin-bottom: 5vh;
     margin: 1vw;
-    width: 40vw;
+    width: 37vw;
     border: 1px solid #e8e8e8;
     box-sizing: border-box;
     border-radius: 8px;
@@ -383,18 +384,21 @@ label > input[type="radio"] + * {
 
     margin-bottom: 5vh;
     margin: 1vw;
-    width: 50vw;
+    width: 47vw;
     border: 2px solid #e8e8e8;
     box-sizing: border-box;
     border-radius: 8px;
     height: 15vh;
     color: black;
   }
-  .aadar-head{
+  .aadhar-head{
     display: flex;
     justify-content: center;
     width: 40vw;
-    font-weight: 100;
+    font-weight: 0;
+    font-family: 'Inter';
+    font-size: small;
+    color: #AEAEB2;
   }
   .file-input{
     display: flex;
@@ -409,7 +413,7 @@ label > input[type="radio"] + * {
   .rectangle {
     position: absolute;
     width: 100vw;
-    height: 30vh;
+    height: 20vh;
     background: #f0f7e9;
     border-radius: 0px 0px 0px 40px;
     &__register-headings {
@@ -433,9 +437,10 @@ label > input[type="radio"] + * {
 
     &__tracking-btns {
       //position: relative;
-      margin-top: 3vh;
+
       display: flex;
       justify-content: center;
+      margin-top: -7vh;
       &__round-btns {
         display: flex;
         justify-content: center;
@@ -513,6 +518,7 @@ label > input[type="radio"] + * {
       &__input-one{
         width: 80vw;
         display: inline-block;
+        margin-top: -10vh;
         border: 1px solid gray;
         border-radius: 1rem;
         text-align: center;
@@ -545,5 +551,43 @@ label > input[type="radio"] + * {
         font-size: 24px;
       }
     }
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 23vh;
+    width: 100vw;
+    &__logos {
+      position: relative;
+      background: #f8fcf3;
+      border: 1vmin solid #347571;
+      box-sizing: border-box;
+      height: 15vmax;
+      width: 15vmax;
+      margin: 1vmax;
+      border-radius: 12vmax;
+    }
+  }
+  .radio-btn-container {
+    display: flex;
+    justify-content: center;
+    color:  #5DB075;
+    margin-top: 23vh;
+    font-size: 2vmin;
+    font-weight: 800;
+    width: 100vw;
+    &__logos {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      background: #f8fcf3;
+      border: .5vmin solid #5DB075;
+      box-sizing: border-box;
+      height: 5vmax;
+      width: 15vmax;
+      margin: 1vmax;
+      border-radius: 2vw;
+    }
+
   }
 }
